@@ -673,7 +673,7 @@ background-color: #FAFAFA;
 
 /*This is an additional rule by miketa*/
 #header {
-height:125px;
+height:150px;
 padding-top:15px;
 }
 
@@ -710,7 +710,7 @@ padding-top:15px;
     top: 0;
     height: 2.7em;
     width: 100%;
-    background: #474546;
+    background: #4B4E55; /* #474546 */
   }
 }
 /**
@@ -2031,7 +2031,7 @@ body {
 /***************************** STAY CONNECTED **************************/
 /* line 101, ../sass/styles.scss */
 #wrapper {
-  min-height: 30px;
+  min-height: 25px;
 }
 
 /* line 104, ../sass/styles.scss */
@@ -2170,7 +2170,7 @@ body {
 
 /* line 182, ../sass/styles.scss */
 .view-slideshow {
-  background: #474546;
+  background: #4B4E55;
 }
 
 /* line 185, ../sass/styles.scss */
