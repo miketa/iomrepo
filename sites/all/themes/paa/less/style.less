@@ -1,0 +1,161 @@
+// Bootstrap library.
+@import 'bootstrap.less';
+
+// Base-theme overrides.
+@import 'overrides.less';
+
+// Theme specific.
+@import 'header.less';
+@import 'content.less';
+@import 'footer.less';
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, 
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
+.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8,
+.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+	position:static;
+}
+.node-promoted{
+	min-height:200px;
+	margin-bottom:20px;
+	padding:10px;
+
+	h2{margin:0;}
+}
+
+
+// ********************** SLIDESHOW ************************/
+.orbit-wrapper{
+	width:100%;
+	overflow:hidden;
+
+	.orbit-slide{
+		position:absolute;
+		top:0;
+		}
+	}
+.orbit{left:0; overflow:hidden;}
+
+.orbit-slide{
+	.views-field-body{
+		position:absolute;
+		top:0;
+		left:0;
+		background:#fff;
+		padding:40px;
+		width:30%;
+	}
+	.views-field-title{
+		position:absolute;
+		top:10px;
+		left:3%;
+	}
+	.views-field-title h3{color:#fff;}
+	}
+
+.slider-nav:hover{
+	opacity:1;
+	}
+.slider-nav {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:3;
+	width:100%;
+	opacity:0;
+	.fade;
+	
+	span.left{
+		background:url(../images/arrows.png) no-repeat 0 center;
+		width:30px;
+		height:30px;
+		overflow:hidden;
+		text-indent:-999px;
+		float:left;
+		cursor:pointer;
+		margin-left:1%;
+		padding:20% 0
+	}
+	span.right{
+		background:url(../images/arrows.png) -30px center no-repeat;
+		width:30px;
+		height:30px;
+		overflow:hidden;
+		text-indent:-999px;
+		float:right;
+		cursor:pointer;
+		margin-right:1%;
+		padding:20% 0;
+	}
+}
+
+
+.orbit-bullets{
+	margin:0;
+	position:absolute;
+	z-index:3;
+	bottom:0;
+	left:50%;
+	
+	li{
+		display:inline;
+		margin:0 5px;
+		background:url(../images/bullets.png);
+		width:22px;
+		height:22px;
+		float:left;
+		text-indent:-999999px;
+		overflow:hidden;
+		cursor:pointer;
+		
+		.active{
+			background-position:0 -22px; 
+			}
+		}
+	}
+
+.fluid-placeholder{
+	height:100%;
+	opacity:0;
+}
+
+// ********************* LAYOUT ****************************/
+.map_full{
+	position:relative; overflow:hidden; margin:20px 0;
+	
+	@media @wide { 
+		display:block;
+		margin:20px auto;
+		max-width:1600px;
+	}
+}
+// ************************** NAVBAR *************************/
+.navbar-default{
+	background:@gray-dark;
+	border:@gray-darker;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	border: @gray-darker;
+}
+.navbar .navbar-brand{
+	@media @tablet{display:none;}
+	@media @normal{display:block;}
+	@media @wide{display:block;}
+}
+
+// **************************  MAGIC *************************/
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+.fade(@tim: 200ms){
+-webkit-transition: all @tim ease-in-out;
+-moz-transition: all @tim ease-in-out;
+-o-transition: all @tim ease-in-out;
+transition: all @tim ease-in-out;
+}

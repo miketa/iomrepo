@@ -1,0 +1,453 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* Import Sass mixins, variables, Compass modules, etc. */
+@import "init";
+
+/* HTML element (SMACSS base) rules */
+@import "normalize";
+
+/* Layout rules */
+@import "layouts/responsive";
+
+/* Component (SMACSS module) rules */
+@import "components/misc";
+// Optionally, add your own components here.
+@import "print";
+
+
+/* SMACSS theme rules */
+/* @import "theme-A"; */
+/* @import "theme-B"; */
+
+body{ background:$footer-bg;}
+.main-wrap{ background:#fff; padding-bottom:$margin-b * 2;}
+.views-exposed-form .views-exposed-widget{float:none;}
+/********************************** HEADER ******************************/
+.header{
+	h2{
+		margin-top:-3%;
+	}
+	float:none;
+	.header__name-and-slogan{
+		margin-top:$margin-t;
+		margin-left:$margin-t;
+	}
+}
+/**********************   CUSTOM LAYOUT SIDEBAR *************************/
+.sidebars{
+	margin-top: $margin-t;
+	.block{ 
+		border:1px solid #eee;
+		margin-bottom:$margin-b+10;
+		padding:5px;
+	}
+	h2{
+		margin:0;
+		font-size:15px;
+		background: #008AD2;
+		color:#fff;
+		padding:3px 10px;
+	}
+
+}
+#content{
+	margin-top: $margin-t;
+}
+/******************** MAIN CONTENT *************************************/
+#content{
+	.block{
+		h2.block-title{
+			border-bottom:1px solid #ccc;
+			margin-bottom:$margin-b;
+		}
+	}
+	
+}
+
+/********************* BREADCRUMBS *************************************/
+.breadcrumb{
+	a, li{
+		font-size:12px;
+	}
+	margin:10px 0;
+}
+/************************** SEARCH ************************************/
+#search-block-form{
+	margin-top:56px;
+	#edit-search-block-form--2{
+		width:73%;
+		padding:5px;
+		@include box(3px);
+		color:#ccc;
+		border: 1px solid #ccc;
+	}
+	input[type="submit"]{
+		background:#57BAE8;
+		color:#fff;
+		border:none;
+		padding:5px 15px;
+	}
+	input[type="submit"]:hover{
+		background:#eb7125;
+	}
+}
+/***************************** STAY CONNECTED **************************/
+#wrapper{
+	min-height:30px;
+}
+.stay-connected{
+	float:right;
+	padding:5px;
+	}
+
+.stay-connected span{
+	font-weight:bold; color:#ccc;
+	font-size:12px;
+	float:left;
+	margin-right:10px;
+	line-height:17px;}
+
+.home-icon{
+	background:url(../images/home-btn.jpg) no-repeat;
+	float:left; width:15px; height:14px; overflow:hidden; text-indent:20px;}
+.regional-social span{
+	float:left;}
+.regional-social a span,.stay-connected  a span{
+	float:left; width:16px; height:17px; overflow:hidden; text-indent:20px; margin-right:5px;}
+.fb{
+	background:url(../images/fb-icon.jpg) no-repeat;
+}
+.tw{
+	background:url(../images/tw-icon.jpg) no-repeat;
+}
+.fl{
+	background:url(../images/fl-icon.jpg) no-repeat;
+}
+.yb{
+	background:url(../images/yt-icon.jpg) no-repeat;
+}
+.rss{
+	background:url(../images/rss-icon.jpg) no-repeat;
+}
+.subscribe{
+	background:url(../images/subscribe_btn.jpg) no-repeat; width:71px !important; text-indent:72px !important;margin-right:0 !important;}
+/******************************* NAVIGATION ****************************/
+#navigation{
+	.menu{
+		width:100%;
+		height:$nav-height;
+		
+		li{
+			padding:0;
+			
+			span,a, a.active{
+				color:#fff; 
+				line-height:$nav-height; 
+				padding:0 15px;
+				text-decoration:none;}
+			
+			a.active{ background:$nav-active;}
+			a:hover{background:$nav-active;}
+			ul{background: $nav-bg;}
+		}
+		li:hover{
+			background: $nav-active;
+		}
+	}
+}
+#superfish-1-select{
+	padding:5px;
+	margin:3px;
+	width:100%;
+}
+/*********************** FOOTER ********************************/
+#footer-wrap{
+	border-top: 2px solid ($footer-bg /2);
+	background:$footer-bg;
+	padding-top:$margin-t*2;
+}
+/********************** MAIN BANNER ****************************/
+ .views-slideshow-cycle-main-frame-row, .views-slideshow-cycle-main-frame {
+      width: 100% !important;
+    }
+.mainBanner{
+	margin:10px auto;
+}
+.view-slideshow{
+	background:$nav-bg;
+}
+.Slideshow{
+	padding:10px;
+	color:#fff;
+	h1, h2, h3, h4{
+		color:#fff;
+		}
+	.group-right{
+		width:48%;
+	}
+}
+.main-slideshow{
+	position:relative;
+	a{
+		color:$link-hover;
+	}
+	.views-slideshow-controls-top{
+		position:absolute;
+		bottom:5px;
+		right:1%;
+		z-index:100;
+	}
+	.views_slideshow_controls_text_previous,.views_slideshow_controls_text_pause,.views_slideshow_controls_text_next{
+		background: #000;
+		opacity:.4;
+		float:left;
+		@include box(40px);
+		padding:20px;
+	}
+	
+	.views_slideshow_controls_text_previous:hover,.views_slideshow_controls_text_pause:hover,.views_slideshow_controls_text_next:hover{
+		opacity:.6;
+		}
+	.views-slideshow-controls-text-status-play{
+		a{
+			border-right:4px solid #fff;
+			border-left:4px solid #fff;
+			text-indent:200px;
+			width:5px;
+			height:12px;
+			float:left;
+			overflow:hidden;
+		}
+	}
+	.views-slideshow-controls-text-status-pause{
+		a{
+			width: 0; 
+			height: 0; 
+			border-top: 6px solid transparent;
+			border-bottom: 6px solid transparent;
+			
+			border-left: 13px solid #fff;
+			text-indent:200px;
+			
+			float:left;
+			overflow:hidden;
+		}
+	}
+	.views_slideshow_controls_text_previous{
+		a{
+			border-top:1px solid #fff;
+			border-left:1px solid #fff;
+			text-indent:200px;
+			width:10px;
+			height:10px;
+			float:left;
+			overflow:hidden;
+			@include rotate(-45deg)
+		}
+	}
+	.views_slideshow_controls_text_next{
+		float:right;
+		a{
+			border-top:1px solid #fff;
+			border-right:1px solid #fff;
+			text-indent:200px;
+			width:10px;
+			height:10px;
+			float:left;
+			overflow:hidden;
+			@include rotate(45deg)
+		}
+	}
+}
+/********************** PRESS BRIEFING NOTES **************************/
+.pbn-page{
+	h1, h2,h3,h4{
+		margin:0; padding:0;
+	}
+	.view-content{margin-top:$margin-t;}
+	.views-row{
+		border-bottom:1px solid #eee;
+		padding:10px 0;
+		
+		p{
+			padding:0;
+			margin:0;
+		}
+	}
+	.views-row:last-child{
+		border-bottom:0;
+	}
+	.field-name-field-date-publish{
+		font-size:$h5-font-size;
+		color:$link-hover
+	}
+	.more-link{
+		margin-top:10px;
+		float:none;
+		text-align:left;
+	}
+}
+.pbnFull{
+	.field-name-field-location{
+		float:right;
+		border:1px solid #eee;
+		padding:3px;
+	}
+}
+/******************* MORE LINKS **********************************/
+.more-link{
+
+	a{
+		font-size:$h6-font-size;
+		padding:3px 10px;
+		color:#fff;
+		width:100%;
+		text-align:center;
+		background:#008AD2;
+	}
+	a:hover{
+		background:#eb7125;
+	}
+	margin-bottom:3px;
+}
+
+/********************************* NEWS LISTING **********************/
+.news-block{
+	.group-left{
+		width:20%;
+		
+		img{
+			display:block;
+			margin: auto;
+			border:1px solid #ccc;
+			padding:3px;
+		}
+	}
+	.group-right{
+		width:80%;
+	}
+}
+.news-listing{
+	.views-row{
+		margin: $margin-t 0;
+	}
+}
+
+.view-projects-under-a-theme{
+	display:block;
+	clear:both;
+	min-height:280px;
+}
+.activity-attach{
+	h4{
+		margin:0;
+		font-size: $h5-font-size;
+	}
+	.views-row{
+		float:left;
+		border:1px solid #ccc; 
+		padding:5px;
+		margin-right:$margin-t;
+		width:25%;
+		min-height:222px;
+		
+	}
+	.field-name-field-acitivity-images{
+    .field-item{
+      display:none;
+      }
+    .field-item:first-child{
+      display:block;
+     }
+	}
+}
+.activities{
+	.list-row{
+	border-bottom:3px solid #008AD2;
+	}
+}
+/********************* CALENDAR *****************************/
+.mini-cal{
+	.pager{
+		margin:0;
+		li{
+			list-style:none;
+			.ajax-progress{
+				position:absolute;
+				top:0; right:0;
+			}
+		}
+		
+	}
+	.date-nav{
+		padding:0;
+	}
+}
+.day-cal{
+	.pager{
+		margin:0;
+		li{
+			list-style:none;
+			.ajax-progress{
+				position:absolute;
+				top:0; right:0;
+			}
+		}
+		
+	}
+	.date-nav{
+		padding:0;
+	}
+}
+.year-cal{
+	.pager{
+		margin:0;
+		li{
+			list-style:none;
+			.ajax-progress{
+				position:absolute;
+				top:0; right:0;
+			}
+		}
+		
+	}
+	.date-nav{
+		padding:0;
+	}
+}
+.month-cal{
+	.pager{
+		margin:0;
+		li{
+			list-style:none;
+			.ajax-progress{
+				position:absolute;
+				top:0; right:0;
+			}
+		}
+	}
+	.date-nav{
+		padding:0;
+	}
+}
+.eventFullView{
+	.field-type-image{
+		float:left;
+		padding:3px; margin-right:$margin-t;
+	}
+}
+@media all and (max-width: 480px){
+	.ds-2col-fluid > .group-left, .ds-2col-fluid > .group-right, .Slideshow > .group-right{width:100%; float:none;}
+}
+@media all and (min-width: 480px) and (max-width: 959px){
+
+}
+@media all and (min-width: 960px){
+
+}
