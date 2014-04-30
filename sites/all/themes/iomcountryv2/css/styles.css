@@ -674,7 +674,7 @@ background-color: #FAFAFA;
 /*This is an additional rule by miketa*/
 #header {
 height:150px;
-padding-top:15px;
+padding-top:30px; /* miketa 15px*/
 }
 
 /* Containers for grid items and flow items. */
@@ -901,8 +901,9 @@ padding-top:15px;
   .header .region-header1 {
     float: left;
     width: 33.33333%;
-    margin-left: 25%;
+    margin-left: 15%; /* from 25% miketa */
     margin-right: -58.33333%;
+	margin-top: -3%; /* miketa*/
   }
   /* line 193, ../sass/layouts/_responsive.scss */
   .header .region-header2 {
@@ -1928,7 +1929,7 @@ tr.selected td {
 /* @import "theme-B"; */
 /* line 28, ../sass/styles.scss */
 body {
-  background: #f2f2f2;
+  background: #e7e7e7;
 }
 
 /* line 29, ../sass/styles.scss */
@@ -2031,7 +2032,7 @@ body {
 /***************************** STAY CONNECTED **************************/
 /* line 101, ../sass/styles.scss */
 #wrapper {
-  min-height: 25px;
+  min-height: 0px;
 }
 
 /* line 104, ../sass/styles.scss */
@@ -2042,8 +2043,7 @@ body {
 
 /* line 109, ../sass/styles.scss */
 .stay-connected span {
-  font-weight: bold;
-  color: #ccc;
+  color: #4b4e55;
   font-size: 12px;
   float: left;
   margin-right: 10px;
@@ -2484,3 +2484,9 @@ body {
     float: none;
   }
 }
+
+/* Extra CSS by Miketa*/
+#block-locale-language li{
+	display:inline;
+	list-style: none;
+	}
