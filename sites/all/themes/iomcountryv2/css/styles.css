@@ -1085,14 +1085,14 @@ padding-top:30px; /* miketa 15px*/
 /* line 98, ../sass/components/_misc.scss */
 .header__site-name {
   margin: 0;
-  font-size: 2em;
+  font-size: 1.7em;
   line-height: 1.28571em;
 }
 
 /* The link around the name of the website. */
 /* line 106, ../sass/components/_misc.scss */
 .header__site-link:link, .header__site-link:visited {
-  color: #000;
+  color: #005Daa;
   text-decoration: none;
 }
 /* line 112, ../sass/components/_misc.scss */
@@ -1989,7 +1989,7 @@ body {
   border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
   font-size: 1.2em; /*miketa*/
-  color: #008Ad2; /*miketa*/
+  color: #005Daa; /*miketa*/
 }
 
 /********************* BREADCRUMBS *************************************/
@@ -2079,35 +2079,27 @@ body {
 
 /* line 123, ../sass/styles.scss */
 .fb {
-  background: url(../images/fb-icon.jpg) no-repeat;
+  background: url(../images/facebook.png) no-repeat;
 }
 
 /* line 126, ../sass/styles.scss */
 .tw {
-  background: url(../images/tw-icon.jpg) no-repeat;
+  background: url(../images/twitter.png) no-repeat;
 }
 
 /* line 129, ../sass/styles.scss */
 .fl {
-  background: url(../images/fl-icon.jpg) no-repeat;
+  background: url(../images/flickr.png) no-repeat;
 }
 
 /* line 132, ../sass/styles.scss */
 .yb {
-  background: url(../images/yt-icon.jpg) no-repeat;
+  background: url(../images/youtube.png) no-repeat;
 }
 
 /* line 135, ../sass/styles.scss */
 .rss {
   background: url(../images/rss-icon.jpg) no-repeat;
-}
-
-/* line 138, ../sass/styles.scss */
-.subscribe {
-  background: url(../images/subscribe_btn.jpg) no-repeat;
-  width: 71px !important;
-  text-indent: 72px !important;
-  margin-right: 0 !important;
 }
 
 /******************************* NAVIGATION ****************************/
@@ -2177,7 +2169,7 @@ body {
 
 /* line 185, ../sass/styles.scss */
 .Slideshow {
-  padding: 10px 10px 10px 0px;
+  padding: 0px 10px 10px 0px;
   color: #fff;
 }
 /* line 188, ../sass/styles.scss */
@@ -2186,7 +2178,7 @@ body {
 }
 /* line 191, ../sass/styles.scss */
 .Slideshow .group-right {
-  width: 40%; /*from 48 miketa */
+  width: 48%;
 }
 
 /* line 195, ../sass/styles.scss */
@@ -2489,6 +2481,6 @@ body {
 
 /* Extra CSS by Miketa*/
 #block-locale-language li{
-	display:inline;
+	display: inline;
 	list-style: none;
 	}

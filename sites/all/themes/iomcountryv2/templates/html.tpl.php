@@ -54,7 +54,6 @@
 			<a href="http://twitter.com/IOM_news" target="_blank"><span class="tw">twitter</span></a>
 			<a href="http://www.flickr.com/photos/iom-migration/" target="_blank"><span class="fl">flickr</span></a>
 			<a href="http://www.youtube.com/iommigration" target="_blank"><span class="yb">youtube</span></a>
-			<a href="http://contacts.iom.int/user/register" target="_blank"><span class="subscribe">Subscribe</span></a>
 		</div>
 	</div>
   <?php print $page_top; ?>
