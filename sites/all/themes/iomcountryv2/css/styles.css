@@ -901,7 +901,7 @@ padding-top:30px; /* miketa 15px*/
   .header .region-header1 {
     float: left;
     width: 33.33333%;
-    margin-left: 15%; /* from 25% miketa */
+    margin-left: 7%; /* from 25% miketa */
     margin-right: -58.33333%;
 	margin-top: -3%; /* miketa*/
   }
@@ -1988,6 +1988,8 @@ body {
 #content .block h2.block-title {
   border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
+  font-size: 1.2em; /*miketa*/
+  color: #008Ad2; /*miketa*/
 }
 
 /********************* BREADCRUMBS *************************************/
@@ -2184,7 +2186,7 @@ body {
 }
 /* line 191, ../sass/styles.scss */
 .Slideshow .group-right {
-  width: 48%;
+  width: 40%; /*from 48 miketa */
 }
 
 /* line 195, ../sass/styles.scss */
