@@ -2157,6 +2157,7 @@ body {
 /* line 176, ../sass/styles.scss */
 .views-slideshow-cycle-main-frame-row, .views-slideshow-cycle-main-frame {
   width: 100% !important;
+  height: 271px; /*miketa*/
 }
 
 /* line 179, ../sass/styles.scss */
@@ -2486,3 +2487,9 @@ body {
 	display: inline;
 	list-style: none;
 	}
+
+	@-moz-document url-prefix() {
+    h1 {
+        color: red;
+    }
+}
