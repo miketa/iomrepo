@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,700&subset=latin,greek);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700&subset=latin,greek);
 /**
  * @file
  * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
@@ -2179,9 +2179,16 @@ body {
 .Slideshow h1, .Slideshow h2, .Slideshow h3, .Slideshow h4 {
   color: #fff;
 }
+
+.Slideshow h2{
+	font-size: 1.3em;
+	font-weight: 400;
+	color: #EB7125;
+}
 /* line 191, ../sass/styles.scss */
 .Slideshow .group-right {
   width: 48%;
+  font-weight: 200;
 }
 
 /* line 195, ../sass/styles.scss */
