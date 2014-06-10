@@ -395,7 +395,7 @@ dd {
 menu,
 ol,
 ul {
-  padding: 0 0 0 30px;
+  padding: 10px 0 0 30px;
   /* LTR */
 }
 
@@ -652,8 +652,8 @@ table {
 /*miketa*/
 #page{
 box-shadow: 0px 10px 10px 0px #888888;
-padding: 10px;
 background-color: #FAFAFA;
+padding-bottom: 20px;
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
@@ -677,6 +677,14 @@ background-color: #FAFAFA;
 #header {
 height:165px;
 padding-top:30px; /* miketa 15px*/
+background: rgb(244,249,255); /* Old browsers */
+background: -moz-linear-gradient(45deg,  rgba(244,249,255,1) 0%, rgba(242,247,255,1) 30%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(244,249,255,1)), color-stop(30%,rgba(242,247,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(45deg,  rgba(244,249,255,1) 0%,rgba(242,247,255,1) 30%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(45deg,  rgba(244,249,255,1) 0%,rgba(242,247,255,1) 30%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(45deg,  rgba(244,249,255,1) 0%,rgba(242,247,255,1) 30%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(45deg,  rgba(244,249,255,1) 0%,rgba(242,247,255,1) 30%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f9ff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 /* Containers for grid items and flow items. */
@@ -841,7 +849,7 @@ padding-top:30px; /* miketa 15px*/
 @media all and (min-width: 960px) {
   /* line 161, ../sass/layouts/_responsive.scss */
   .preface {
-    min-height: 150px;
+    min-height: 160px;
   }
   /* line 163, ../sass/layouts/_responsive.scss */
   .preface .region-preface1 {
@@ -879,6 +887,7 @@ padding-top:30px; /* miketa 15px*/
     width: 100%;
     margin-left: 0%;
     margin-right: -100%;
+	margin-top: -10px;
   }
 
   /**
@@ -2123,7 +2132,8 @@ body {
   padding: 0;
 }
 #navigation .menu li li{
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 1px #484e5e;
+ 
 }
 /* line 149, ../sass/styles.scss */
 #navigation .menu li span, #navigation .menu li a, #navigation .menu li a.active {
@@ -2163,12 +2173,19 @@ body {
   padding-top: 20px;
   color: #fff;
 }
-
+.footer-left{
+	float: left;
+}
+.footer-right{
+	left: 80px;
+	top: 15px;
+	position: relative;
+}
 /********************** MAIN BANNER ****************************/
 /* line 176, ../sass/styles.scss */
 .views-slideshow-cycle-main-frame-row, .views-slideshow-cycle-main-frame {
   width: 100% !important;
-  height: 271px; /*miketa*/
+  height: 270px; /*miketa*/
 }
 
 /* line 179, ../sass/styles.scss */
@@ -2510,9 +2527,10 @@ body {
 	padding: 3px;
 	margin-right: 20px;
 }
-.hide-author{
-	visibility: hidden;
+.view-display-id-page .node-40{
+	display: none;
 }
+
 
 	@-moz-document url-prefix() {
     #search-block-form input[type="submit"] {
