@@ -2059,7 +2059,7 @@ body {
 /* line 104, ../sass/styles.scss */
 .stay-connected {
   float: right;
-  padding: 5px;
+ /* padding: 5px;   miketa */
 }
 
 /* line 109, ../sass/styles.scss */
@@ -2535,5 +2535,8 @@ body {
 	@-moz-document url-prefix() {
     #search-block-form input[type="submit"] {
 		padding: 5px 12px;
+		}
+	.stay-connected{
+		padding: 5px;
 		}
 }

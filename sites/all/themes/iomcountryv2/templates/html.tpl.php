@@ -49,7 +49,7 @@
 	<div id="wrapper">
 		<div class="stay-connected">
 			<span>IOM Global Corner:</span>
-			<a href="http://www.iom.int"><span class="home-icon">Home</span></a>
+			<a href="http://www.iom.int" target="_blank"><span class="home-icon"></span></a>
 			<a href="http://www.facebook.com/pages/International-Organization-for-Migration/161303029020?ref=mf" target="_blank"><span class="fb">facebook</span></a>
 			<a href="http://twitter.com/IOM_news" target="_blank"><span class="tw">twitter</span></a>
 			<a href="http://www.flickr.com/photos/iom-migration/" target="_blank"><span class="fl">flickr</span></a>
